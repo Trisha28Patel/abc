@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie Website</title>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet"> <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script> -->
+    <link rel="stylesheet" href="lightbox.css">
+    <!-- <link href="path/to/lightbox.css" rel="stylesheet"> -->
+<!-- <script src="path/to/lightbox.js"></script> -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="resonsive.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+
+  <!-- We create a navabar -->
+   <header id="full_nav">
+          <div class="header">
+            <div class="container">
+              <nav class="navbar navbar-expand-lg">
+                  <a class="navbar-brand" href="#">
+                    <img src="logo.png" alt="logo">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <!-- <i class="fa-sharp fa-solid fa-bars-staggered  navbar-toggler-icon"></i> -->
+                    <i class="fa-light fa-bars-staggered  navbar-toggler-icon"></i>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                      <li class="nav-item" >
+                        <a class="nav-link active" aria-current="page"  href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="product.html">product</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link "  href="gallery.html" >Gallery</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link " aria-disabled="true" href="contact.html" >Contact</a>
+                      </li>
+                    </ul>
+                    <div class="header_right">
+                      <div class="text-lg-end">
+                        <span>Call Us!</span>
+                        <span class="phone-no">
+                             +91 9998212482
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                
+              </nav>
+            </div>
+          </div>
+   </header>
+
+   <section class="banner_section">
+    <div class="container">
+       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+          <div class="carousel-indicators">
+             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true"></button>
+             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+          </div>
+          <div class="carousel-inner">
+             <div class="carousel-item active">
+                <div class="carousel-caption">
+                   <div class="banner-content">
+                      <h1>100% Organic</h1>
+                      <h3>Fresh & Natural Farm food</h3>
+                      <p>"Every bite of organic food is a step toward a cleaner planet, a healthier body, 
+                        and a more sustainable future."</p>
+                      <a href="product.html" class="btn main-btn">All products</a>
+                   </div>
+                </div>
+             </div>
+             <div class="carousel-item" >
+                <div class="carousel-caption">
+                   <div class="banner-content">
+                      <h1>1000% Organic</h1>
+                      <h3>Fresh & Natural Farm food</h3>
+                      <p>"Organic food isn't just a trend; it's a return to nature's wisdom—food grown with care, without chemicals, and in harmony with the earth."</p>
+                      <a href="product.html" class="btn main-btn">All products</a>
+                   </div>
+                </div>
+             </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+             <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+             <span class="carousel-control-next-icon" aria-hidden="true"></span>
+             <span class="visually-hidden">Next</span>
+          </button>
+       </div>
+    </div>
+ </section>
+
+
+
+
+
+ <section class="feature_section">
+  <div class="container" >
+    <div class="row">
+      <div class="col-6 col-lg-3 mb-5"> 
+        <!--col-6 for >576px col-lg-3 >=992 px only for width-->
+        <div class="card feature-box">
+          <div class="text-center">
+            <div class="feature-icon-border">
+              <div class="features-icon">
+                <img src="feature-icon/ui-chat.svg"  alt="">
+              </div>
+            </div>
+            <div class="feature-text">
+              <h3>24/07 support</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3 mb-5">
+        <div class="card feature-box">
+          <div class="text-center">
+            <div class="feature-icon-border">
+              <div class="features-icon">
+                <img src="feature-icon/lemon.svg"   alt="">
+              </div>
+            </div>
+            <div class="feature-text">
+              <h3>24/07 support</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3 mb-5">
+        <div class="card feature-box">
+          <div class="text-center">
+            <div class="feature-icon-border">
+              <div class="features-icon">
+                <img src="feature-icon/truck-loaded.svg"  alt="">
+              </div>
+            </div>
+            <div class="feature-text">
+              <h3>Free Shiping</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3 mb-5">
+        <div class="card feature-box">
+          <div class="text-center">
+            <div class="feature-icon-border">
+              <div class="features-icon">
+                <img src="feature-icon/wheat.svg"  alt="">
+              </div>
+            </div>
+            <div class="feature-text">
+              <h3>24/07 support</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ </section>
+
+
+ <section class="landing_about_section">
+<div class="container">
+  <div class="row align-items-center">
+  <div class="col-xl-5 col-lg-6 col-sm-8">
+     <div class="about-content">
+      <h2>provide us!</h2>
+      <div class="about-details">
+        <p class="fw-bold">
+          Healthy soil, Health food Healthy you!!.
+        </p>
+        <p>"When we choose organic, we choose health—not just for ourselves, but for the soil, 
+          the water, and the generations to come."</p>
+        <p>"True nourishment comes from food grown with love, without pesticides, 
+          and in soil that thrives with life—because healthy food starts with a healthy earth."</p>
+     <a href="about.html" class="btn main-btn">Read More</a>
+      </div>
+     </div>
+  </div>
+  </div>
+</div>
+ </section>
+
+
+ <section class="landing_product_section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center pb-5">
+        <h2 class="suection-title">Our Best Seller Product</h2>
+      <p class="section-subtitle">
+        Focusing on the superior taste, freshness, and purity of organic food compared to conventionally grown alternatives.
+        Emphasizing that organic food is free from harmful pesticides, artificial additives, and GMOs, 
+        leading to better nutrition and overall well-being.
+      </p>
+      </div>
+    </div>
+    <div class="row mx-0">
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <div class="card product-card">
+          <div class="product-img">
+            <img src="products/product-1.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="d-flex align-items-center justify-content-between">
+            <h3>melon</h3>
+            <span>Rs 120 KG</span>
+          </div>
+          <div class="product-detail">
+            <a href="product.html" class=" btn main-btn">View Product</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <div class="card product-card">
+          <div class="product-img">
+            <img src="products/product-2.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="d-flex align-items-center justify-content-between">
+            <h3>Orange</h3>
+            <span>Rs 70 KG</span>
+          </div>
+          <div class="product-detail">
+            <a href="product.html" class=" btn main-btn">View Product</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <div class="card product-card">
+          <div class="product-img">
+            <img src="products/product-3.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="d-flex align-items-center justify-content-between">
+            <h3>Apple</h3>
+            <span>Rs 100 KG</span>
+          </div>
+          <div class="product-detail">
+            <a href="product.html" class=" btn main-btn">View Product</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <div class="card product-card">
+          <div class="product-img">
+            <img src="products/product-4.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="d-flex align-items-center justify-content-between">
+            <h3>Dragon</h3>
+            <span>Rs 170 KG</span>
+          </div>
+          <div class="product-detail">
+            <a href="product.html" class=" btn main-btn">View Product</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ </section>
+ 
+
+
+
+
+
+ <section class="test_section">
+<div class="container">
+  <div class="row pb-5">
+    <div class="col-12 text-center">
+      <h2 class="section-title">Our Happy customer</h2>
+      <p class="section-subtitle">Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae laboriosam sint harum officia tempora adipisci reiciendis, quis enim aliquid atque sapiente commodi possimus, amet minima est nemo ullam veniam doloribus!
+    rum expedita quia sunt minima soluta dolorum iste vero obcaecati exercitationem commodi culpa blanditiis eum, veritatis maiores voluptatum?
+      </p>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+   <div class="col-xl-8 col-md-10">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="d-sm-flex row">
+            <div class="profile-box col-sm-5">
+              <img src="testimonial/testimonial-1.png" alt="" class="img-fluid">
+            </div>
+            <div class=" card col-sm-7">
+              <div class="desc-box">
+                <p class="fst-italic">
+                  "Switching to organic food has been life-changing! I feel more energetic, 
+                  my digestion has improved, and I love knowing that I'm avoiding harmful chemicals. 
+                  The quality and taste are unbeatable!"
+                </p>
+                <div class="my-4">
+                  <h4>Sneha</h4>
+                  <p class="m-0 text-white">Happy Customer</p>
+                </div>
+                <img src="testimonial/qoutes.svg" alt="" class="float-end">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="carousel-item">
+          <div class="d-sm-flex row">
+            <div class="profile-box col-sm-5">
+              <img src="testimonial/testimonial-1.png" alt="" class="img-fluid">
+            </div>
+            <div class=" card col-sm-7">
+              <div class="desc-box">
+                <p class="fst-italic">
+                  "Organic fruits and vegetables just taste better! The flavors are richer, 
+                  and the freshness lasts longer compared to regular produce. I'll never go back to conventional food." 
+                </p>
+                <div class="my-4">
+                  <h4>Sneha</h4>
+                  <p class="m-0 text-white">Happy Customer</p>
+                </div>
+                <img src="testimonial/qoutes.svg" alt="" class="float-end">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="d-sm-flex row">
+            <div class="profile-box col-sm-5">
+              <img src="testimonial/testimonial-1.png" alt="" class="img-fluid">
+            </div>
+            <div class=" card col-sm-7">
+              <div class="desc-box">
+                <p class="fst-italic">
+                  "Switching to organic food has been life-changing! I feel more energetic, my digestion has improved, 
+                  and I love knowing that I'm avoiding harmful chemicals. The quality and taste are unbeatable!" 
+                </p>
+                <div class="my-4">
+                  <h4>Sneha</h4>
+                  <p class="m-0 text-white">Happy Customer</p>
+                </div>
+                <img src="testimonial/qoutes.svg" alt="" class="float-end">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        
+        <!-- <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="...">
+        </div> -->
+      </div>
+      <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button> -->
+    </div>
+   </div>
+  </div>
+</div>
+ </section>
+
+
+
+
+
+ <section class="gallery_section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center pb-5">
+        <div class="section-title">Our Gallery</div>
+        <p class="section-subtitle">"Fuel Your Body with Nature's Goodness."
+        </p>
+      </div>
+      <div class="col-sm-6 col-lg-4 mb-4">
+        <a href="gallery/g-1.jpg" data-lightbox="image" data-title="lemon">
+          <img src="gallery/g-1.jpg" alt="" class="img-fluid rounded-3">
+        </a>
+      </div>
+      <div class="col-sm-6 col-lg-4 mb-4">
+        <a href="products/fresh-fruits1.jpg" data-lightbox="image" data-title="lemon">
+          <img src="products/fresh-fruits1.jpg" alt="" class="img-fluid rounded-3">
+        </a>
+      </div>
+      <div class="col-sm-6 col-lg-4 mb-4">
+          <a href="gallery/g-3.jpg" data-lightbox="image" data-title="lemon">
+          <img src="gallery/g-3.jpg" alt="" class="img-fluid rounded-3">
+        </a>
+      </div>
+      <div class="col-sm-6 col-lg-4 mb-4">
+          <a href="gallery/g-4.jpg" data-lightbox="image" data-title="lemon">
+          <img src="gallery/g-4.jpg" alt="" class="img-fluid rounded-3">
+        </a>
+      </div>
+      <div class="col-sm-6 col-lg-4 mb-4">
+          <a href="gallery/g-5.jpg" data-lightbox="image" data-title="lemon">
+          <img src="gallery/g-5.jpg" alt="" class="img-fluid rounded-3">
+        </a>
+      </div>
+      <div class="col-sm-6 col-lg-4 mb-4">
+          <a href="gallery/g-6.jpg" data-lightbox="image" data-title="lemon">
+          <img src="gallery/g-6.jpg" alt="" class="img-fluid rounded-3">
+        </a>
+      </div>
+      <!-- <div class="col-sm-6 col-lg-4 mb-4">
+          <a href="gallery/g-7.jpg" data-lightbox="image" data-title="lemon">
+          <img src="gallery/g-7.jpg" alt="" class="img-fluid rounded-3">
+        </a>
+      </div>
+      <div class="col-sm-6 col-lg-4 mb-4">
+          <a href="gallery/g-8.jpg" data-lightbox="image" data-title="lemon">
+          <img src="gallery/g-8.jpg" alt="" class="img-fluid rounded-3">
+        </a>
+      </div> -->
+    </div>
+  </div>
+ </section>
+<section class="footer_wrapper mt-3 mb-md-0 ">
+  <div class="container px-5 px-lg-0">
+    <div class="row"> 
+      <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+          <h5>Tazza</h5>
+          <p class="mb-4 ps-0 company_details">Explore our wide range of organic products, learn about sustainable agriculture, 
+            and join our community of health-conscious consumers. Together, we can make a difference—one organic meal at a time!</p>
+             <div class="contact-info">
+              <ul class="list-unstyled">
+                <li><a href="#"><i class="fa fa-home me-3"></i>No.96, South City</a></li>
+                <li><a href="#"><i class="fa fa-phone me-3"></i>febndbsaj</a></li>
+                <li><a href="#"><i class="fa fa-envelope me-3"></i>bdebwfyuwehuhdce </a></li>
+              </ul>
+             </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+        <h5>Customer Support</h5>
+        <ul class="link-widget">
+         <li><a href="#">About us</a></li>
+         <li><a href="#">Privacy policy</a></li>
+         <li><a href="#">Terms and Condition/a></li>
+         <li><a href="#">Product Return</a></li>
+         <li><a href="#">WholeSale Policy</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+        <h5>Quick Link</h5>
+        <ul class="link-widget">
+         <li><a href="#">About us</a></li>
+         <li><a href="#">Privacy policy</a></li>
+         <li><a href="#">Terms and Condition/a></li>
+         <li><a href="#">Product Return</a></li>
+         <li><a href="#">WholeSale Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+         <h5>NewsLetter</h5>
+         <div class="form-group mb-4">
+          <input type="email" name="" class="form-control bg-transparent " placeholder="enter your email">
+          <button type="submit" class="btn main-btn">Subscribe</button>
+         </div>
+         <h5>Stay Connected</h5>
+         <ul class="social-network d-flex align-item-center p-0">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter "></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+         </ul>
+      </div>
+
+       
+
+    </div>
+  </div>
+<div class="container-fluid copyright-section">
+  <p>CopyRight <a href="#">@hifi Comapny</a> All right reserved</p>
+</div>
+</section>
+</body>
+</html>
