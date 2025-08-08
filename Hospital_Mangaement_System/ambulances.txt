@@ -1,0 +1,15 @@
+1,ramu,Available
+1,ramu,Available
+2,shyamu,Available
+1,ramu,Available
+2,shyamu,Available
+3,ramesh,Available
+1,ramu,Booked
+2,shyamu,Available
+3,ramesh,Available
+1,ramu,Booked
+2,shyamu,Booked
+3,ramesh,Available
+1,ramu,Booked
+2,shyamu,Booked
+3,ramesh,Booked

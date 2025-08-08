@@ -1,0 +1,6 @@
+1,tri,25,thyrode
+2,riya,30,dangee
+3,siya,25,pneumonia
+4,tri,25,aabb
+5,priya,23,allergic
+6,tiya,28,cancer
